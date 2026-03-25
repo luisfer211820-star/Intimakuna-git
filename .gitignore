@@ -1,0 +1,22 @@
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Proyecto Django
+db.sqlite3
+media/
+staticfiles/
+
+# Variables de entorno
+.env
+
+# SO
+.DS_Store
+Thumbs.db
