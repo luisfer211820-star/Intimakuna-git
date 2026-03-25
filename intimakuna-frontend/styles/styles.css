@@ -80,7 +80,7 @@ button {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-image: url('img/login_bg.jpg');
+    background-image: url('../assets/img/login_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
