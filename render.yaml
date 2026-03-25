@@ -1,0 +1,25 @@
+databases:
+  - name: intimakuna-db
+    databaseName: intimakuna
+    user: intimakuna
+    plan: free
+
+services:
+  - type: web
+    name: intimakuna-backend
+    runtime: python
+    rootDir: intimakuna-backend
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn fundacion.wsgi:application"
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: intimakuna-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: RENDER
+        value: "true"
+      - key: PYTHON_VERSION
+        value: "3.13.0"

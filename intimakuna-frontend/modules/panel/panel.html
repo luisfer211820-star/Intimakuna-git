@@ -56,15 +56,18 @@
         <div class="panel-tabs">
             <button class="panel-tab active" data-tab="fichas">Fichas Técnicas</button>
             <button class="panel-tab" data-tab="papelera">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="vertical-align: middle; margin-right: 4px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" style="vertical-align: middle; margin-right: 4px;">
                     <polyline points="3 6 5 6 21 6" />
                     <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
                 </svg>
                 Papelera
             </button>
             <button class="panel-tab" data-tab="historial">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="vertical-align: middle; margin-right: 4px;">
-                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" style="vertical-align: middle; margin-right: 4px;">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
                 </svg>
                 Historial
             </button>
@@ -137,7 +140,7 @@
                                 <th>#</th>
                                 <th>Nombre</th>
                                 <th>Nombre Científico</th>
-                                <th>Eliminado el</th>
+                                <th>Eliminado</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -162,9 +165,11 @@
                         <p>Registro de todas las operaciones realizadas por el administrador</p>
                     </div>
                     <button class="refresh-btn" id="refresh-historial-btn" title="Actualizar historial">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/>
-                            <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round">
+                            <polyline points="1 4 1 10 7 10" />
+                            <polyline points="23 20 23 14 17 14" />
+                            <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15" />
                         </svg>
                         Actualizar
                     </button>
@@ -190,7 +195,8 @@
                 <!-- Empty state -->
                 <div id="historial-empty" class="empty-state">
                     <div class="empty-state-icon">📋</div>
-                    <p>No hay acciones registradas aún.<br>Las operaciones de crear, editar y eliminar aparecerán aquí.</p>
+                    <p>No hay acciones registradas aún.<br>Las operaciones de crear, editar y eliminar aparecerán aquí.
+                    </p>
                 </div>
             </div>
         </div>
@@ -224,8 +230,8 @@
                     </div>
                     <div class="form-group">
                         <label for="ficha-usos">Usos *</label>
-                        <textarea id="ficha-usos" placeholder="Usos medicinales, ornamentales, etc."
-                            rows="2" maxlength="100" required></textarea>
+                        <textarea id="ficha-usos" placeholder="Usos medicinales, ornamentales, etc." rows="2"
+                            maxlength="100" required></textarea>
                         <span class="field-error" id="ficha-usos-error"></span>
                     </div>
                     <div class="form-row">
@@ -242,7 +248,8 @@
                         <div class="form-group">
                             <label>Riego *</label>
                             <div style="display: flex; gap: 8px;">
-                                <input type="number" id="ficha-riego-veces" placeholder="Veces" min="1" style="width: 80px;" required>
+                                <input type="number" id="ficha-riego-veces" placeholder="Veces" min="1"
+                                    style="width: 80px;" required>
                                 <select id="ficha-riego-frecuencia" style="flex: 1;" required>
                                     <option value="">Frecuencia...</option>
                                     <option value="al día">al día</option>
@@ -267,7 +274,8 @@
                         </div>
                         <div class="form-group">
                             <label for="ficha-precio">Precio ($) *</label>
-                            <input type="number" id="ficha-precio" placeholder="Ej: 15.50" step="0.01" min="0.01" required>
+                            <input type="number" id="ficha-precio" placeholder="Ej: 15.50" step="0.01" min="0.01"
+                                required>
                             <span class="field-error" id="ficha-precio-error"></span>
                         </div>
                     </div>
